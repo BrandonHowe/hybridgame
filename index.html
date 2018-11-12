@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hybrid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/upgrades.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/machinery.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/settings.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="titlescreen">
+        <h1>Hybrid</h1>
+        <div id="startgamebutton" onclick="hideTitleScreen()">
+            <p>Start game</p>
+        </div>
+    </div>
+    <div id="gamescreen">
+        <h3 id="statuslogtitle">Status log</h3>
+        <div id="statuslog">
+            
+        </div>
+        <div id="settingsbox">
+            <h3 id="settingsboxmachinery" onclick="switchtabs()">Machinery</h3>
+            <div id="settingsboxsettings">Settings</div>
+            <div id="settingsmodal" class="settingsmodal">
+                <div class="settingsmodalcontent">
+                    <span class="settingsmodalclose">&times;</span>
+                    <p>settings bruv</p>
+                    <div id="settingsSaveGame" onclick="saveGame()" class="settingsoptions">Save game</div>
+                    <div id="settingsLoadGame" onclick="loadGame()" class="settingsoptions">Load game</div>
+                    <div id="settingsDeleteSave" onclick="deleteSaveConfirm()" class="settingsoptions">Delete Save</div>
+                    <div id="settingsDeleteSave2" onclick="deleteSave()">Confirm Delete Save</div>
+                    <!--<div id="settingsAutoSave" onclick="autoSave()" class="settingsoptions">Toggle AutoSave (Currently ON)</div>-->
+                </div>
+            </div>
+        </div>
+        <div id="hybridtank1" onclick="pump1()">
+            <div id="hybridtank1pump"></div>
+            <div id="hybridtank1shaft"></div>
+            <div id="hybridtank1filling"></div>
+        </div>
+        <div id="inventoryarea">
+            <h3 id="inventoryareatitle">Inventory</h3>
+            <br><br>
+            <p id="inventoryenergy" class="inventoryareawords">Energy: </p>
+            <br>
+            <p id="inventorycomponents" class="inventoryareawords">Components: </p>
+            <br>
+            <p id="inventoryelectronics" class="inventoryareawords">Electronics: </p>
+            <br>
+            <p id="inventoryautocollectors" class="inventoryareawords">Autocollectors: </p>
+        </div>
+        <div id="creationarea">
+            <h3 id="creationareatitle">Creation</h3>
+            <br><br><br>
+            <div id="creationarealight" class="creationareawords" onclick="buyLight()">Light
+                <span class="creationarealighttooltip">5 energy. Provides light.</span>
+            </div>
+            <div id="creationareacollect" class="creationareawords" onclick="collectComponents()">Collect components
+                <span class="creationareacollecttooltip">Pick up some components.</span>
+            </div>
+            <div id="creationarealightmaker" class="creationareawords" onclick="createLightMaker()">Light maker
+                <span class="creationarealightmakertooltip">20 energy and 10 components. Makes light.</span>
+            </div>
+            <div id="creationareaupgradelightmaker" class="creationareawords" onclick="upgradeLightMaker()">Upgrade Light Maker
+                <span class="creationareaupgradelightmakertooltip">40 energy, 20 components, and 4 electronics. Upgrade your light maker to see further.</span>
+            </div>
+            <div id="creationareaautopumper1" class="creationareawords" onclick="createAutoPumper1()">Autopumper
+                <span class="creationareaautopumper1tooltip">20 energy and 20 components. Pumps automatically.</span>
+            </div>
+            <div id="creationAreaAutoCollector" class="creationareawords" onclick="createAutoCollector()">Autocollector
+                <span class="creationAreaAutoCollectorTooltip">40 energy, 30 components, and 5 electronics. Collects things automatically.</span>
+            </div>
+        </div>
+        <div id="machineryarea">
+            <h3 id="machineryareatitle">Machinery</h3>
+            <div id="machineryarealight">Light maker
+                <div id="machineryarealightslidecontainer">
+                    <input type="range" min="0" max="2" value="0" class="slider" id="machineryarealightslider">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="src/main.js"></script>
+<script src="src/setup.js"></script>
+<script src="src/pump.js"></script>
+<script src="src/player.js"></script>
+<script src="src/upgrades.js"></script>
+<script src="src/interact.js"></script>
+<script src="src/machinery.js"></script>
