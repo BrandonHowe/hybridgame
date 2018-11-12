@@ -1,0 +1,199 @@
+#creationarealight {
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: solid 2px #666;
+    background-color: #444;
+    position: relative;
+}
+
+#creationarealight .creationarealighttooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    right: 110%;
+    border: solid 2px #666
+}
+
+#creationarealight:hover .creationarealighttooltip {
+    visibility: visible
+}
+
+#creationareacollect {
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: solid 2px #666;
+    background-color: #444;
+    position: relative;
+}
+
+#creationareacollect .creationareacollecttooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -15px;
+    right: 110%;
+    border: solid 2px #666
+}
+
+#creationareacollect:hover .creationareacollecttooltip {
+    visibility: visible
+}
+
+#creationarealight:hover {
+    background-color: #555;
+}
+
+#creationareacollect:hover {
+    background-color: #555;
+}
+
+#creationarealightmaker {
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: solid 2px #666;
+    background-color: #444;
+    position: relative;
+}
+
+#creationarealightmaker .creationarealightmakertooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 110%;
+    border: solid 2px #666
+}
+
+#creationarealightmaker:hover .creationarealightmakertooltip {
+    visibility: visible
+}
+
+#creationareaupgradelightmaker {
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: solid 2px #666;
+    background-color: #444;
+    position: relative;
+}
+
+#creationareaupgradelightmaker .creationareaupgradelightmakertooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    right: 110%;
+    border: solid 2px #666
+}
+
+#creationareaupgradelightmaker:hover .creationareaupgradelightmakertooltip {
+    visibility: visible;
+}
+
+#creationareaautopumper1 {
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: solid 2px #666;
+    background-color: #444;
+    position: relative;
+}
+
+#creationareaautopumper1 .creationareaautopumper1tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 110%;
+    border: solid 2px #666;
+}
+
+#creationareaautopumper1:hover .creationareaautopumper1tooltip {
+    visibility: visible;
+}
+
+#creationAreaAutoCollector {
+    width: 80%;
+    height: 8%;
+    padding: 2%;
+    border: solid 2px #666;
+    background-color: #444;
+    position: relative;
+}
+
+#creationAreaAutoCollector .creationAreaAutoCollectorTooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 110%;
+    border: solid 2px #666
+}
+
+#creationAreaAutoCollector:hover .creationAreaAutoCollectorTooltip {
+    visibility: visible
+}
+
+#creationarealight:hover {
+    background-color: #555;
+}
+
+#creationareacollect:hover {
+    background-color: #555;
+}
+
+#creationarealightmaker:hover {
+    background-color: #555;
+}
+
+#creationareaupgradelightmaker:hover {
+    background-color: #555;
+}
+
+#creationareaautopumper1:hover {
+    background-color: #555;
+}
+
+#creationAreaAutoCollector:hover {
+    background-color: #555;
+}

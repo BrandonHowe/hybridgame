@@ -1,0 +1,23 @@
+.settingsoptions {
+    background-color: #333;
+    border: solid 3px #666;
+    border-radius: 3px;
+    padding: 1%;
+    width: 20%;
+    display: inline-block;
+}
+
+#settingsDeleteSave2 {
+    background-color: #333;
+    border: solid 3px #666;
+    border-radius: 3px;
+    padding: 1%;
+    width: 20%;
+    display: none;
+}
+
+#settingsAutoSave {
+    display: block;
+    width: 30%;
+    margin-top: 1%;
+}

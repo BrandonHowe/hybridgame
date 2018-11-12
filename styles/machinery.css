@@ -1,0 +1,50 @@
+#machineryarealight {
+    position: absolute;
+    left: 3%;
+    width: 90%;
+    height: 7%;
+    top: 7%;
+    padding: 2%;
+    background-color: #444;
+    border: solid 1px #666;
+}
+
+#machineryarealight:hover {
+    background-color: #555;
+}
+
+#machineryarealightslidecontainer {
+    width: 100%;
+}
+
+#machineryarealightslider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+#machineryarealightslider {
+    opacity: 1;
+}
+
+#machineryarealightslider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#machineryarealightslider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
